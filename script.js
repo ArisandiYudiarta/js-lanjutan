@@ -31,37 +31,37 @@
 //2. Function Declaration=========================================
 
 //ini yang dihubungkan
-const methodMahasiswa = {
+// const methodMahasiswa = {
 
-    makan: function(porsi){
-        this.energi += porsi;
-        console.log(`Halo ${this.nama}, Selamat makan!`);
-    },
+//     makan: function(porsi){
+//         this.energi += porsi;
+//         console.log(`Halo ${this.nama}, Selamat makan!`);
+//     },
 
-    main:  function(jam){
-        this.energi -= jam;
-        console.log(`Halo ${this.nama}, Selamat bermain!`);
-    },
+//     main:  function(jam){
+//         this.energi -= jam;
+//         console.log(`Halo ${this.nama}, Selamat bermain!`);
+//     },
 
-    tidur: function(jam){
-        this.energi += jam*2;
-        console.log(`Halo ${this.nama}, Silahkan tidur!`);
-    },
+//     tidur: function(jam){
+//         this.energi += jam*2;
+//         console.log(`Halo ${this.nama}, Silahkan tidur!`);
+//     },
 
-};
+// };
 
-function Mahasiswa(nama, energi){
-    // menghubungkan dengan object diatas.
-    let mahasiswa = Object.create(methodMahasiswa);
-    mahasiswa.nama = nama;
-    mahasiswa.energi = energi;
+// function Mahasiswa(nama, energi){
+//     // menghubungkan dengan object diatas.
+//     let mahasiswa = Object.create(methodMahasiswa);
+//     mahasiswa.nama = nama;
+//     mahasiswa.energi = energi;
 
-    return mahasiswa;
-}
-// Object 1
-let arisandi = Mahasiswa('Arisandi', 100);
-// Object 2
-let ambara = Mahasiswa('Ambara', 100);
+//     return mahasiswa;
+// }
+// // Object 1
+// let arisandi = Mahasiswa('Arisandi', 100);
+// // Object 2
+// let ambara = Mahasiswa('Ambara', 100);
 
 //the only thing u only use really.
 //3. Constructor Function=========================================
@@ -82,3 +82,59 @@ let ambara = Mahasiswa('Ambara', 100);
 // }
 
 // let arisandi = new Mahasiswa('Arisandi', 100);
+
+
+// Prototype=========================================
+
+// Prototype inheritance
+
+// function Mahasiswa(nama, energi){
+//     // let mahasiswa = Object.create(methodMahasiswa);
+//     this.nama = nama;
+//     this.energi = energi;
+// }
+
+// //deklarasi method menggunakan prototype
+// Mahasiswa.prototype.makan = function (porsi){
+//     this.energi += porsi;
+//     return `Halo ${this.nama}, Selamat makan!`;
+// }
+
+// Mahasiswa.prototype.main = function (jam){
+//     this.energi -= jam;
+//     return `Selamain bermain ${this.nama}!`;
+// }
+
+// Mahasiswa.prototype.tidur = function(jam){
+//     this.energi += jam*2;
+//     return `Silahkan tidur ${this.nama}`;
+// }
+
+// let arisandi = new Mahasiswa('Arisandi', 100);
+
+// OOP (ver class)
+
+class Mahasiswa{
+    constructor(nama, energi){
+        this.nama = nama;
+        this.energi = energi;
+    }
+
+    makan(porsi){
+        this.energi += porsi;
+        return `Halo ${this.nama}, Selamat makan!`;
+    }
+
+    main(jam){
+        this.energi -= jam;
+        return `Halo ${this.nama}, Selamat bermain!`;
+    }
+
+    tidur(jam){
+        this.energi += jam*2;
+        return `Halo ${this.nama}, Selamat tidur!`;
+    }
+}
+
+let arisandi = new Mahasiswa('Arisandi', 100);
+let  = new Mahasiswa('Ambara', 100);
