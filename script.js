@@ -55,19 +55,6 @@ function Mahasiswa(nama, energi){
     let mahasiswa = Object.create(methodMahasiswa);
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
-    // mahasiswa.makan = methodMahasiswa.makan;
-    // mahasiswa.main = methodMahasiswa.main;
-    // mahasiswa.tidur = methodMahasiswa.tidur;
-
-    // mahasiswa.makan = function(porsi){
-    //     this.energi += porsi;
-    //     console.log(`Halo ${this.nama}, Selamat makan!`);
-    // }
-
-    // mahasiswa.main = function(jam){
-    //     this.energi -= jam;
-    //     console.log(`Halo ${this.nama}, Selamat bermain!`);
-    // }
 
     return mahasiswa;
 }
