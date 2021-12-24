@@ -38,10 +38,11 @@ let malam = ucapSalam('Malam');
 // console.dir(malam);
 
 //memanggil function untuk mengisi parameter dan mengeluarkan closure
-ucapSalam('Pagi')('Arisandi');
+
 siang('Dedek');
 malam('Senna');
-
+// bisa juga tanpa dimasukin ke variabel lagi pake cara dibawah
+ucapSalam('Pagi')('Arisandi');
 
 
 // fungsi ke 2==========================================
