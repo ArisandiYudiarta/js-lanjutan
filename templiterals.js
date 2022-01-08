@@ -67,7 +67,7 @@
 //     ${mhs.map(m => `<ul>
 //         <li>${m.nama}</li>   
 //         <li>${m.nim}</li>
-//     </ul>`).join('')}
+//         </ul>`).join('')}
 // </div>`
 
 // document.body.innerHTML = el;
@@ -107,7 +107,7 @@ const mhs = {
 }
 
 function showDataStudents(matkul){
-    return` 677777777777
+    return` 
         <ol>
             ${matkul.map(mk => `<li>${mk}</li>`).join('')}
         </ol>
