@@ -36,9 +36,9 @@ const mhs2 = ['Adi','Maki','Dio'];
 // });
 
 // for..of===== 
-// for(const [i,m] of mhs.entries()) {
-//     console.log(`${m}, adalah mahsiswa ke-${i+1}`);
-// }
+for(const [i,m] of mhs.entries()) {
+    console.log(`${m}, adalah mahsiswa ke-${i+1}`);
+}
 
 // //NodeList=====================================
 // const liNama = document.querySelectorAll('.nama');
@@ -73,14 +73,14 @@ const mhs2 = ['Adi','Maki','Dio'];
 
 // for..in ========================================================
 
-const mhs3 = {
-    nama: 'Arisandi',
-    nim: 200040011,
-    kelas: 'BA204'
-}
+// const mhs3 = {
+//     nama: 'Arisandi',
+//     nim: 200040011,
+//     kelas: 'BA204'
+// }
 
-for(m in mhs3){
-    console.log(m);
-    console.log(mhs3[m]);
-}
+// for(m in mhs3){
+//     console.log(m);
+//     console.log(mhs3[m]);
+// }
 

@@ -2,9 +2,9 @@
 // memecah iterables menjadi single element 
 // ditandakan dengan "...<variabel>"
 
-// const mhs = ['Arisandi','Yudiarta','Putu'];
-// console.log(...mhs);
-// console.log(...mhs[0]);
+const mhs = ['Arisandi','Yudiarta','Putu'];
+console.log(...mhs);
+console.log(...mhs[1]);
 
 // Penggunaan Spread Operator=======================================
 
@@ -34,7 +34,7 @@
 
 const nama = document.querySelector('.nama');
 const huruf  = [...nama.textContent].map(h =>`<span>${h}</span>`).join('');
-nama.innerHTML=huruf;
+nama.innerHTML = huruf;
 
 
  
