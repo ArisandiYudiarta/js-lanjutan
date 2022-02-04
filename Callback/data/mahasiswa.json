@@ -1,0 +1,30 @@
+[
+   {
+    "nama": "Arisandi Yudiarta",
+    "nim": "200040011",
+    "email": "arisandiyudiarta21@gmail.com",
+    "jurusan": "Teknologi Informasi",
+    "idDosenWali": 1
+   },
+   {
+    "nama": "Teguh Pradnyana",
+    "nim": "200040234",
+    "email": "andikateguh12@gmail.com",
+    "jurusan": "Sistem Informasi",
+    "idDosenWali": 2
+   },
+   {
+    "nama": "Dicky Saputra",
+    "nim": "200040005",
+    "email": "goyangantante@gmail.com",
+    "jurusan": "Sistem Komputer",
+    "idDosenWali": 3
+   },
+   {
+    "nama": "Darma Yuda",
+    "nim": "200040009",
+    "email": "darmayuda432@gmail.com",
+    "jurusan": "Bisnis Informatika",
+    "idDosenWali": 4
+   }
+]
