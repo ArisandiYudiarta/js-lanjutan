@@ -39,7 +39,6 @@ searchBtn.addEventListener('click', function(){
     fetch('http://www.omdbapi.com/?apikey=687f67d&s=' + inputKeyword.value)
         .then(response => response.json())
         .then(response => {
-            console.log(response);
             const movies = response.Search;
             let cards ='';
             movies.forEach(m => cards += showCards(m));
